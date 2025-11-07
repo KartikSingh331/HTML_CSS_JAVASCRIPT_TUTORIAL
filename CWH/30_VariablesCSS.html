@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        :root{
+            /* global variable also used as local variable */
+       /* this variable is used to pick the color where where it used remove extra time repetition. */
+            --color: rgb(80, 80, 184);
+            --seccolor: rgb(192, 192, 99);
+            --defpad:34px;
+        }
+        .nav{
+            /* background-color: gray; */
+            background-color: var(--color,brown); 
+            /* above b/c find color variable if not found puts brown color */
+        }
+        ul{
+            display: flex;
+            /* padding: var(--defpad); */
+        }
+        ul li{
+            list-style: none;
+            padding: 34px;
+        }
+        .container{
+            /* background-color: gold; */
+            background-color: var(--seccolor);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Registration</li>
+        </ul>
+    </div>
+    <div class="container">
+       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores doloribus sint dignissimos. Possimus optio facere nisi asperiores laborum porro quas ratione corrupti, suscipit unde in quibusdam voluptatem vel sapiente libero repudiandae odio neque temporibus. Sapiente cumque harum inventore magnam excepturi molestias itaque. Minus ratione soluta odio aliquid voluptatum suscipit quidem? Recusandae nulla voluptate quia hic.</p>
+    </div>
+    
+</body>
+</html>
