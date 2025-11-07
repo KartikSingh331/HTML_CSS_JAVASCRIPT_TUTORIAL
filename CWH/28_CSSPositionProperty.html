@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            border: 2px solid black;
+            margin: 3px;
+            /* padding: ; */
+            width: 50vw;
+            height: 30vw;
+        }
+        .box1{
+            background-color: purple;
+            /* absolute neglect others */
+            /* top: 1px;
+            left: 3px;
+            position: absolute; */
+
+            /* like nav bar make it sticky 
+            */
+            position: sticky;
+            top: 0px;
+            height: 50px;
+            width: 200px;
+            padding: 0;
+            margin: 0;
+        }
+        .box2{
+            background-color: aqua;
+            /* currently position of box2 is static means at right place */
+            /* Let's make it movable means relative */
+            position: relative;
+             top: 20px;
+            left: 41px;     
+        }
+        .box3{
+            background-color:  rgb(185, 113, 113);
+            /* make box fixed just like ad on sarkariresult.com */
+            position: fixed;
+            height: 100vw;
+            width: 100vw;
+        }
+        .box4{
+            background-color: wheat;
+        }
+        .parent{
+            margin: 42px;
+            padding: 40px;
+            height: 80vh;
+            width: 80vw;
+            border: 3px solid green;
+            /* if we make parent absolute then boxes moves relative to this */
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+    <div class=" box1 box"></div>
+    <div class=" box2 box"></div>
+    <div class=" box3 box"></div>
+    <div class=" box4 box"></div>
+    </div>
+</body>
+</html>
