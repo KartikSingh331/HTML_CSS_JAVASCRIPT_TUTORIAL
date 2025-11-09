@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 3px;
+            margin: 5px;
+        }
+        /* .box:first-child{
+            background-color: red;
+        }
+        .boxes *{
+            color: blue;
+            border: 2px solid black;
+        } */
+        [data-color="primary"]{
+            padding-top: 25px;
+        }
+        .box:nth-child(odd){
+            background-color: purple;
+        }
+        /* .box:nth-last-child(1){
+            background-color: skyblue;
+        } */
+         .boxes::before{
+            content: "Uper aa gya sbse";
+            color: brown;
+         }
+         .boxes::after{
+            content: "Niche aa gya sbse";
+            color: brown;
+         }
+         ::selection{
+            background-color: black;
+            color: aqua;
+         }
+         .box::first-letter{
+            color: aquamarine;
+            font-size: 35px;
+         }
+         input::placeholder{
+            color: bisque;
+         }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box"> hey dude whats fucking</div>
+                <div class="box"> hey dude whats fucking</div>
+
+         <div class="box"> hey dude whats fucking</div>
+          <input type="text" placeholder="Type ur text"
+    </div>
+</body>
+</html>
