@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns:[pehla] 100px [Dusra] 120px;
+           grid-template-rows: 120px 100px 200px; /*it demonstrate 3 rows  */
+        }
+        .item{
+             border: 2px solid red;
+             height: 55px;
+             width: 55px;
+        }
+        .item-3{
+             grid-row: 1/2;   /*1 sai 2 tk ki jgh lai   */
+            grid-column: pehla/2;
+        }
+        /* same item-4 kai liye ho to overlap ho jayega */
+    </style>
+</head>
+<body>
+       <div class="container">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item item-3">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+          
+            
+         
+        </div>
+</body>
+</html>
