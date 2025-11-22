@@ -1,14 +1,19 @@
-let button = document.getElementById("btn")
+console.log("Hello 1st")
+console.log("Hello 2nd")
 
-button.addEventListener("click", ()=>{
-    // alert("I was hovered madherchod....Ma ka bhosda aaag....bhag bhosdi aaag")
-    // document.querySelector(".box").innerHTML= "<b> jsjsjjjdcjdjcjcjdcccjcjcj<b>"
-})
+setTimeout(() => {
+    console.log("Hello 3rd")
+} ,2000)
 
-// button.addEventListener("context menu", ()=>{
-// alert("Dont hack me by right click")
-// })
+console.log("Hello 4th")
+const callback = (arg) => {
+    console.log(arg)
+}
 
-button.addEventListener("keydown", (e)=>{
-   console.log(e)
-})
+const loadScript = (src, callback) => {
+    let sc = document.createElement("script");
+    sc.src = src;
+    sc.onload = callback("Harry");
+    document.head.append(sc)
+}
+loadScript("https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js", callback)
